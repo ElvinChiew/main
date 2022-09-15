@@ -13,11 +13,17 @@ elif gender == 2 :
 else:
   print("Wrong input")
 
+def calculate_BMI(w, h):
+  bmi = w / (h*h)
+  bmi = round(bmi,2)
+  return bmi
+
 print("Enter you height in m :")
 height = float(input())
 
 print("Enter you wieght in Kg :")
 weight = float(input())
 
-bmi = weight/ (height*height)
-print("Your BMI is: ", bmi)
+print("your BMI is: ", calculate_BMI(weight, height))
+#bmi = weight/ (height*height)
+#print("Your BMI is: ", bmi)
