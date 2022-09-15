@@ -12,3 +12,12 @@ elif gender == 2 :
   print("You are Female")
 else:
   print("Wrong input")
+
+print("Enter you height in m :")
+height = float(input())
+
+print("Enter you wieght in Kg :")
+weight = float(input())
+
+bmi = weight/ (height*height)
+print("Your BMI is: ", bmi)
